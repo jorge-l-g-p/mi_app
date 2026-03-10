@@ -42,3 +42,27 @@ button {
     font-size: 20px;
 }
 
+.img-status {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    padding: 20px;
+}
+.img-commit {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    padding: 20px;
+}
+.img-push {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    padding: 20px;
+}
