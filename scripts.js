@@ -2,27 +2,32 @@ const comandos = [
     {
         titulo: "git status",
         texto: "Muestra el estado actual del repositorio: archivos modificados o sin seguimiento.",
-        imagen: "static/imagenes/capturadepantalla.png"
+        imagen: "static/imagenes/gitstatus.png",
+        clase: "img-status"
     },
     {
         titulo: "git add .",
         texto: "Agrega todos los archivos modificados al área de preparación (staging).",
-        imagen: "imagenes/add.png"
+        imagen: "imagenes/add.png",
+        clase:"img-add"
     },
     {
         titulo: 'git commit -m "mensaje"',
         texto: "Guarda los cambios en el historial del proyecto con un mensaje descriptivo.",
-        imagen: "imagenes/commit.png"
+        imagen: "static/imagenes/gitcommit.png",
+        clase: "img-commit"
     },
     {
-        titulo: "git push origin branch",
+        titulo: "git push -u origin branch",
         texto: "Envía los commits de tu rama local al repositorio remoto.",
-        imagen: "imagenes/push.png"
+        imagen: "static/imagenes/gitpush (2).png",
+        clase: "img-push"
     },
     {
         titulo: "git pull origin branch",
         texto: "Trae y fusiona los cambios del repositorio remoto a tu rama local.",
-        imagen: "imagenes/pull.png"
+        imagen: "imagenes/pull.png",
+        clase: "img-pull"
     }
 ];
 
@@ -36,6 +41,9 @@ function actualizarContenido() {
     titulo.textContent = comandos[indiceActual].titulo;
     descripcion.textContent = comandos[indiceActual].texto;
     imagen.src = comandos[indiceActual].imagen;
+
+    // aplicar clase individual
+    imagen.className = comandos[indiceActual].clase || "";
 }
 
 function siguiente() {
